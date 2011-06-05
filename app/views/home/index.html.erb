@@ -370,29 +370,41 @@
 				<!-- contact form -->
 				<h2>Get in touch</h2>
 				<div>
-					<form id="contact-form" method="post" action="">
+				  <%= form_for(@subscriber) do |f|%>
+				  <% if @subscriber.errors.any? %>
+				    <h5><%= pluralize(@subscriber.errors.count, "error") %> prohibited saving</h4>
+				    <ul>
+				    <% @subscriber.errors.full_messages.each do |msg| %>
+				      <li><%= msg %></li>
+				    <% end %>
+				    </ul>
+				  <% end %>
 						<ul>
 							<li>
-								<label for="name">Name: (Required)</label>
-								<input id="name" type="text" name="name" />
+								<label for="name">Guest(s) Name*:</label>
+								<%= f.text_field :name %>
 							</li>
 							<li>
-								<label for="email">Email Address: (Required)</label>
-								<input id="email" type="text" name="email" />
+								<label for="email">Email Address*:</label>
+								<%= f.text_field :email %>
 							</li>
 							<li>
-								<label for="subject">Subject: (Required)</label>
-								<input id="subject" type="text" name="subject" />
+								<label for="will_attend">Do you know if you will be attending?</label>
+								<%= select(f, :will_attend, Subscriber.will_attends.keys) %>
 							</li>
 							<li>
-								<label for="message">Message: (Required)</label>
-								<textarea id="message" name="message" rows="" cols=""></textarea>
+								<label for="staying_at_resort">Do you know if you will be staying at Secrets Maroma Beach?</label>
+								<%= select(f, :staying_at_resort, Subscriber.staying_at_resorts.keys) %>
 							</li>
 							<li>
-								<input id="submit" class="button" type="submit" name="submit" value="Submit" />
+								<label for="comment">Questions/Comments:</label>
+							  <%= f.text_area :comment %>
+							</li>
+							<li>
+								<% f.submit %>
 							</li>
 						</ul>
-					</form>
+					<% end %>
 				</div>
 				<!-- /end contact form -->
 			</div>

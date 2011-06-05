@@ -10,6 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20110605033000) do
+
+  create_table "subscribers", :force => true do |t|
+    t.string   "name",                 :null => false
+    t.string   "email",                :null => false
+    t.integer  "will_attend_cd",       :null => false
+    t.integer  "staying_at_resort_cd", :null => false
+    t.text     "comment",              :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
