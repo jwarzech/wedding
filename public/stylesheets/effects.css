@@ -1,0 +1,124 @@
+/* ------------------------------------------------
+   Round corners
+------------------------------------------------ */
+.button:link, .button:visited {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+ul#menu li a:hover {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.nivo-caption {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+ul#filter li a:link, #filter li a:visited {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#contact-form input, #contact-form textarea {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/* ------------------------------------------------
+   Text shadow
+------------------------------------------------ */
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 1px 1px 0 #ffffff;
+}
+.button:link, .button:visited {
+	text-shadow: 1px 1px 0 #ffffff;
+}
+ul#menu li a {
+	text-shadow: 1px 1px 0 #ffffff;
+}
+#copyrights, #information {
+	text-shadow: 1px 1px 0 #ffffff;
+}
+.nivo-caption p h1 {
+	text-shadow: none;
+}
+.section-header h1 {
+	text-shadow: none;
+}
+#info h1 {
+	text-shadow: 1px 1px 0 #cccccc;
+}
+ul#filter li a:link, #filter li a:visited {
+	text-shadow: 1px 1px 0 #ffffff;
+}
+ul.image-grid li h4 {
+	text-shadow: 1px 1px 0 #ffffff;
+}
+#contact-form label {
+	text-shadow: 1px 1px 0 #ffffff;
+}
+#contact-form label.error {
+	text-shadow: none;
+}
+#contact-form input.button {
+	text-shadow: 1px 1px 0 #ffffff;
+}
+#contact-form input.button:hover {
+	text-shadow: 1px 1px 0 #ffffff;
+}
+
+/* ------------------------------------------------
+   Opacity
+------------------------------------------------ */
+.nivo-directionNav a {
+	opacity: 0.4;
+}
+a.nivo-nextNav:hover, a.nivo-prevNav:hover {
+	opacity: 0.7;
+}
+.nivo-caption {
+	opacity: 0.8; /* Overridden by captionOpacity setting */
+}
+.section-header h1 {
+	opacity: 1;
+}
+.section-nav li a.up {
+	opacity: 0.5;
+}
+.section-nav li a.down {
+	opacity: 0.5;
+}
+.section-nav li a:hover {
+	opacity: 1;
+}
+
+/* ------------------------------------------------
+   Browser hacks
+------------------------------------------------ */
+/* FireFox 3 */
+html>/**/body .thumbForeground, x:-moz-any-link, x:default {
+	top: -142px !important;
+}
+/* Safari & Google Chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.button:link, .button:visited, ul#filter li a:link, ul#filter li a:visited { padding:4px 15px 2px 15px; }
+	.nivo-caption p { padding:20px 15px 15px 15px; }
+}
+/* Opera 10 */
+ @media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+  .nivo-caption p { padding:20px 15px; }
+  .thumbForeground { top: 0 !important; }
+ }
+
+/* ------------------------------------------------
+   Other
+------------------------------------------------ */
+ul.full-width li:last-child {
+	background: none;
+}

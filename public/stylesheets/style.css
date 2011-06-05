@@ -1,0 +1,706 @@
+/*
+	Template Name: Enfolio
+	Template URI: http://themeforest.net/user/cepreu
+	Description: Enfolio is clean designed professional one page portfolio HTML template.
+	Author: Cepreu
+	Author URI: http://cepreu.net/
+	Version: 1.2
+*/
+
+/*
+	Table of Contents
+		- Additional reset
+		- Text (default styles)
+		- Links (default styles)
+		- Buttons
+		- Layout
+		- Header
+		- Footer
+		- Slider
+			- Nivo slider (main styles)
+			- Nivo slider (navigation arrows styles)
+			- Nivo slider (thumbnails styles)
+			- Nivo slider (caption styles)
+		- Columns
+		- Section (header styles)
+		- Section (body styles)
+		- Info section (below slider)
+		- Portfolio section
+			- Quicksand plugin styles
+			- Quicksand plugin styles (layout switcher)
+			- Quicksand plugin styles (default - grid layout)
+			- Quicksand plugin styles (full-width layout)
+		- Styles section
+		- About section
+		- Contact section
+			- Contact Form styles
+			- Google Maps plugin styles
+		- Shortcuts
+		- Noscript
+*/
+
+/* ------------------------------------------------
+   Additional reset 
+------------------------------------------------ */
+input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* ------------------------------------------------
+   Text (default styles)
+------------------------------------------------ */
+* {
+	color: #777777;
+}
+h1, h2, h3, h4, h5, h6 {
+	font: normal 15px/1.4em 'MgOpenModataRegular', Helvetica, Arial, sans-serif;
+}
+h1 {
+	font-size: 28px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 22px;
+}
+h4 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+input, textarea {
+	font: normal 14px/1.4em Arial, sans-serif;	
+}
+
+/* ------------------------------------------------
+   Links (default styles)
+------------------------------------------------ */
+a:link, a:active, a:visited {
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------
+   Buttons
+   Usage - Just add .button class to <a></a> tags
+   Example - <a class="button">Any text</a>
+------------------------------------------------ */
+.button:link, .button:visited {
+	background: #ffffff url('../images/bg-input-textarea-rev.png') repeat-x 0 100%;
+	border: #cccccc 1px solid;
+	color: #b1b1b1;
+	display: block;
+	float: left;
+	height: 25px;
+	margin: 1px;
+	padding: 6px 15px 0 15px;
+	text-decoration: none;
+}
+.button:hover {
+	background: #eeeeee url('../images/bg-input-textarea.png') repeat-x 0 100%;
+	border: #aaaaaa 1px solid;
+	color: #999999;
+}
+
+/* ------------------------------------------------
+   Layout
+------------------------------------------------ */
+html {
+    background: #0e0e0e;
+    height: 100%;
+}
+body {
+	font: normal 15px/1.4em Helvetica, Arial, sans-serif;
+	height: 100%;
+}
+p {
+	padding: 5px 0;
+}
+ul, ol {
+	list-style-position: inside;
+	padding: 10px 5px;
+}
+ul {
+	list-style-type: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+
+/* ------------------------------------------------
+   Header
+------------------------------------------------ */
+#wrap-header {
+	background: #f6f6f6 url('../images/bg-menu.png') repeat-x 0 0;
+	display: block;
+	height: 70px;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+#wrap-2-header {
+	margin: 0 auto;
+	width: 960px;
+}
+#logo {
+	background: url('../images/logo.png') no-repeat 10% 50%;
+	float: left;
+	height: 70px;
+	width: 296px;
+}
+#logo a {
+	display: block;
+	min-height: 70px;
+}
+ul#menu {
+	float: right;
+	height: 70px;
+	list-style-type: none;
+	padding: 0 10px 0 0;
+}
+ul#menu li {
+	display: block;
+	float: left;
+}
+ul#menu li a {
+	color: #999999;
+	display: block;
+	height: 20px;
+	line-height: 15px;
+	margin-top: 15px;
+	padding: 12px 20px 8px 20px;
+	text-decoration: none;
+}
+ul#menu li a:hover {
+	background: #f6f6f6 url('../images/bg-menu-btn.png') repeat-x 0 100%;
+	border: #c3c3c3 1px solid;
+}
+
+/* ------------------------------------------------
+   Footer
+------------------------------------------------ */
+#wrap-footer {
+	background: #f6f6f6;
+	height: 70px;
+	width: 100%;
+}
+#wrap-2-footer {
+	background: url('../images/bg-g-sep.png') repeat-x 0 0;
+	margin: 0 auto;
+	width: 960px;
+}
+#copyrights, #information {
+	color: #999999;
+	font: normal 12px/1.4em Helvetica, Arial, sans-serif;
+	height: 40px;
+	padding-top: 30px;
+}
+#copyrights {
+	float: left;
+	padding-left: 10px;
+}
+#information {
+	float: right;
+	padding-right: 10px;
+}
+
+/* ------------------------------------------------
+   Slider
+------------------------------------------------ */
+#wrap-slider {
+	background: url('../images/bg-slider.png') repeat-x 50% 0;
+	height: 425px;
+	margin-top: 5px;
+}
+#wrap-2-slider {
+	background: url('../images/bg-slider-2.png') no-repeat 50% 0;
+	margin: 0 auto;
+	height: 594px;
+	width: 100%;
+}
+
+/* ------------------------------------------------
+   Nivo slider (main styles)
+------------------------------------------------ */
+#slider {
+    background: url('../images/bg-loading.png') no-repeat 50% 50%;
+	left: 10px;
+	margin: 0 auto;
+	top: 20px;
+	width: 960px;
+}
+.nivoSlider {
+	min-height: 380px;
+	position: relative;
+}
+.nivoSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.nivoSlider img:first-child {
+	display: block;
+}
+.nivoSlider a {
+	border: 0;
+}
+.nivo-AddtBackground {
+	background: url('../images/bg-slider-stroke.png') no-repeat 50% 0;
+	height: 380px;
+	position: absolute;
+	width: 940px;
+	z-index: 79;
+}
+
+/* ------------------------------------------------
+   Nivo slider (navigation arrows styles)
+------------------------------------------------ */
+.nivo-directionNav a {
+	border: 0;
+	display: block;
+	height: 40px;
+	text-indent: -9999px;
+	width: 40px;
+}
+a.nivo-nextNav {
+	background: url('../images/bg-arrow-next.png') no-repeat;
+	top: 325px;
+	right: 35px;
+}
+a.nivo-prevNav {
+	background: url('../images/bg-arrow-prev.png') no-repeat;
+	top: 325px;
+	left: 840px;
+}
+
+/* ------------------------------------------------
+   Nivo slider (thumbnails styles)
+------------------------------------------------ */
+#slider .nivo-controlNav {
+	bottom: -184px;
+	height: 154px;
+	left: -10px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: absolute;
+	width: 960px;
+}
+#slider .nivo-controlNavSpan {
+	height: 154px;
+	margin: 0 auto;
+	position: absolute;
+	width: 1920px;
+}
+#slider .nivo-controlNavSpan a {
+	padding: 0 10px;
+}
+#slider .nivo-controlNavSpan a img {
+	display: inline;
+	position: relative;
+	width: 220px;
+}
+#slider .nivo-controlNavSpan a span.thumbForeground {
+	background: url('../images/bg-thumb-b.png') no-repeat 0 0;
+	height: 154px;
+	left: 10px;
+	position: absolute;
+	top: -140px;
+	width: 220px;
+	z-index: 999;
+}
+#slider .nivo-controlNavSpan a.active span.thumbForeground {
+	background: url('../images/bg-thumb.png') no-repeat 0 0;
+}
+
+/* ------------------------------------------------
+   Nivo slider (caption styles)
+------------------------------------------------ */
+.nivo-caption {
+	background: #000000;
+	bottom: 70px;
+	color: #ffffff;
+	font-size: 13px;
+	left: 580px;
+	position: absolute;
+	text-align: right;
+	width: 360px;
+	z-index: 89;
+}
+.nivo-caption p {
+	padding: 20px 20px 15px 20px;
+	margin: 0;
+}
+.nivo-caption p h1 {
+	color: #f6f6f6;
+	font: normal 50px/1em 'Josefin Sans Std Light', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+.nivo-caption p a {
+	display: block;
+	font-style: italic;
+	text-decoration: none;
+}
+.nivo-caption p a:hover {
+    text-decoration: underline;
+}
+.nivo-html-caption {
+	display: none;
+}
+
+/* ------------------------------------------------
+   Columns
+------------------------------------------------ */
+.column-240, .column-320, .column-480, .column-640, .column-720, .column-960 {
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 0 20px 0 10px;
+}
+.column-240 {
+	width: 210px;
+}
+.column-320 {
+	width: 290px;
+}
+.column-480 {
+	width: 450px;
+}
+.column-640 {
+	width: 610px;
+}
+.column-720 {
+	width: 690px;
+}
+.column-960 {
+	width: 930px;
+}
+
+/* ------------------------------------------------
+   Section (header styles)
+------------------------------------------------ */
+.wrap-section-header {
+	background: url('../images/bg-page-header.png') repeat-x 0 0;
+	height: 100px;
+	margin: 5px 0;
+}
+.section-header {
+	margin: 0 auto;
+	width: 960px;
+}
+.section-header h1 {
+	color: #f6f6f6;
+	font: normal 64px/1.75em 'Josefin Sans Std Light', Helvetica, Arial, sans-serif;
+	float: left;
+	padding-left: 10px;
+	text-transform: uppercase;
+	width: 870px;
+}
+ul.section-nav {
+	float: left;
+	list-style-type: none;
+	padding: 0;
+	width: 80px;
+}
+.section-nav li a {
+	display: block;
+	height: 50px;
+}
+.section-nav li a.up {
+	background: url('../images/bg-up-arrow.png') no-repeat 50% 75%;
+}
+.section-nav li a.down {
+	background: url('../images/bg-down-arrow.png') no-repeat 50% 25%;
+}
+
+/* ------------------------------------------------
+   Section (body styles)
+------------------------------------------------ */
+.wrap-section-body {
+	background: #f6f6f6 url('../images/bg-hd-page.png') repeat-x 0 0;
+	border-top: 1px solid #f1f1f1;
+}
+#info, #portfolio, #styles, #about, #contact {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* ------------------------------------------------
+   Info section (below slider)
+------------------------------------------------ */
+#info {
+	padding: 35px 0 40px 0;
+}
+#info h1 {
+	color: #666666;
+	font: normal 64px/1.3em 'Josefin Sans Std Light', Helvetica, Arial, sans-serif;
+	padding: 0 10px;
+	text-transform: uppercase;
+}
+#info .box-320 {
+	margin: 0;
+}
+#info p {
+	padding: 10px 0 5px 0;
+}
+
+/* ------------------------------------------------
+   Portfolio section
+------------------------------------------------ */
+#portfolio {
+	padding: 40px 0 30px 0;
+	height: 100%;
+}
+#portfolio h2 {
+	display: inline;
+	padding: 0 10px;
+}
+
+/* ------------------------------------------------
+   Quicksand plugin styles
+------------------------------------------------ */
+ul#filter {
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin-bottom: 25px;
+	padding: 0 0 0 10px;
+}
+ul#filter li {
+	display: inline;
+}
+ul#filter li a:link, ul#filter li a:visited {
+	background: #ffffff url('../images/bg-input-textarea-rev.png') repeat-x 0 100%;
+	border: #cccccc 1px solid;
+	color: #b1b1b1;
+	display: block;
+	float: left;
+	height: 25px;
+	margin: 1px;
+	padding: 6px 15px 0 15px;
+	text-decoration: none;
+}
+ul#filter li a:hover, ul#filter li.selected a {
+	background: #eeeeee url('../images/bg-input-textarea.png') repeat-x 0 100%;
+	border: #aaaaaa 1px solid;
+	color: #999999;
+}
+/* ------------------------------------------------
+   Quicksand plugin styles (layout switcher)
+------------------------------------------------ */
+#layoutSwitcher {
+	float: right;
+	padding: 0 10px 0 0;
+}
+
+/* ------------------------------------------------
+   Quicksand plugin styles (default - grid layout)
+------------------------------------------------ */
+ul.image-grid {
+	height: 100%;
+	list-style-type: none;
+	padding: 0;
+	width: 960px;
+}
+ul.image-grid:after, ul.image-grid li span.information:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+ul.image-grid li {
+	float: left;
+	min-height: 180px;
+	padding: 10px;
+	width: 220px;
+}
+ul.image-grid li a.prettyPhoto {
+	display: block;
+	float: left;
+	height: 165px;
+	position: relative;
+	width: 220px;
+}
+ul.image-grid li a span.thumbPortfolio {
+	background: url('../images/bg-thumb-p.png') no-repeat 50% 50%;
+	display: block;
+	height: 165px;
+	position: absolute;
+	top: 0px;
+	width: 220px;
+}
+ul.image-grid li div.information {
+	float: left;
+}
+ul.image-grid li div.information h4 {
+	color: #999999;
+	font: 15px/1.4em Helvetica, Arial, sans-serif;
+	margin-top: -6px;
+}
+ul.image-grid li div.information p {
+	display: none;
+	width: 100%;
+}
+
+/* ------------------------------------------------
+   Quicksand plugin styles (full-width layout)
+------------------------------------------------ */
+ul.full-width li {
+	background: url('../images/bg-g-sep.png') repeat-x 0 100%;
+	padding-top: 15px;
+	width: 940px;
+}
+ul.full-width li div.information h4 {
+	font: 22px/1.4em 'MgOpenModataRegular', Helvetica, Arial, sans-serif;
+	margin: 0 0 5px 20px;
+	width: 700px;
+}
+ul.full-width li div.information p {
+	display: block;
+	margin: 0 0 5px 20px;	
+	padding: 5px 0;
+	text-align: justify;
+	word-spacing: -0.3ex;
+	width: 700px;
+}
+
+/* ------------------------------------------------
+   Styles section
+------------------------------------------------ */
+#styles {
+	padding: 40px 0 10px 0;
+	min-height: 700px;
+}
+
+/* ------------------------------------------------
+   About section
+------------------------------------------------ */
+#about {
+	padding: 40px 0 10px 0;
+	min-height: 700px;
+}
+
+/* ------------------------------------------------
+   Contact section
+------------------------------------------------ */
+#contact {
+	padding: 40px 0 10px 0;
+	min-height: 700px;
+}
+ul#contact-info {
+	list-style-type: none;
+	padding: 10px 0 0 0;
+}
+.contact-addthis {
+	padding: 20px 0 0 0;
+}
+
+/* ------------------------------------------------
+   Contact form styles
+------------------------------------------------ */
+#contact-form ul {
+	list-style-type: none;
+	padding: 0;
+}
+#contact-form label {
+	color: #999999;
+	display: block;
+	float: left;
+	font: normal 14px/1.4em Helvetica, Arial, sans-serif;
+	margin-top: 10px;
+}
+#contact-form label.error {
+	float: right;
+	font: italic 10px/1em Helvetica, Arial, sans-serif;
+	color: #cc0000;
+	padding: 6px 5px 0 5px;
+}
+#contact-form input, #contact-form textarea {
+	background: #ffffff url('../images/bg-input-textarea.png') repeat-x 0 0;
+	border: #cccccc 1px solid;
+	padding: 10px;
+	width: 428px;
+}
+#contact-form textarea {
+	height: 250px;
+}
+#contact-form input.button {
+	background: #ffffff url('../images/bg-input-textarea-rev.png') repeat-x 0 100%;
+	color: #b1b1b1;
+	height: 35px;
+	margin-top: 15px;
+	padding: 0;
+	width: 130px;
+}
+#contact-form input.button:hover {
+	background: #eeeeee url('../images/bg-input-textarea.png') repeat-x 0 100%;
+	border: #aaaaaa 1px solid;
+	color: #999999;
+}
+
+/* ------------------------------------------------
+   Google Maps plugin styles
+------------------------------------------------ */
+#map {
+	border: 5px solid #eeeeee;
+	height: 310px;
+	margin: 5px 0;
+	width: 440px;
+}
+
+/* ------------------------------------------------
+   Shortcuts 
+------------------------------------------------ */
+.button {
+	cursor: pointer;
+}
+.clear {
+	clear: both;
+	height: 0;
+}
+.hidden {
+	display: none;
+}
+.center {
+	text-align: center;
+}
+.g-separator {
+	background: url('../images/bg-g-sep.png') repeat-x 0 100%;
+}
+.v-separator {
+	background: url('../images/bg-v-sep.png') repeat-y 100% 0;
+}
+.small {
+	font-size: 0.8em;
+}
+
+/* ------------------------------------------------
+   Noscript
+------------------------------------------------ */
+.noscript {
+	background: #f6f6f6;
+	display: block;
+	font: normal 13px/1em Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+ul.noscript {
+	list-style-type: none;
+	padding: 10px !important;
+}
+p.noscript {
+	height: 150px;
+	padding-top: 140px !important;
+}
