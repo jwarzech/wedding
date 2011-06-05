@@ -159,7 +159,7 @@ ol {
 	background: url('../images/logo.png') no-repeat 10% 50%;
 	float: left;
 	height: 70px;
-	width: 500px;
+	width: 250px;
 }
 #logo a {
 	display: block;
@@ -703,4 +703,35 @@ ul.noscript {
 p.noscript {
 	height: 150px;
 	padding-top: 140px !important;
+}
+
+/* ------------------------------------------------
+   Custom
+------------------------------------------------ */
+#styles table {
+	border: 1px solid;
+	width: 100%;
+	table-layout: fixed;
+}
+
+#styles table th {
+	border: 1px solid;
+	text-align: center;
+	padding: 10px;
+}
+
+#styles table th.cost-col {
+	width: 35%;
+}
+
+#styles table tr {
+	
+}
+
+#styles table td {
+	border: 1px solid;
+}
+
+#styles table tr.odd {
+	background: #345684;
 }
