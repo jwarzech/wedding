@@ -1,0 +1,14 @@
+# Typus Models Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+Subscriber:
+  fields:
+    default: name, email, will_attend_cd, staying_at_resort_cd, comment
+    form: name, email, will_attend_cd, staying_at_resort_cd, comment
+  order_by: 
+  relationships: 
+  filters: created_at
+  search: name
+  application: wedding
+
