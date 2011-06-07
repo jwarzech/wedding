@@ -708,6 +708,14 @@ p.noscript {
 /* ------------------------------------------------
    Custom
 ------------------------------------------------ */
+#login {
+	background: #ffffff;
+}
+
+#login input {
+	border: 1px solid;
+}
+
 #styles table {
 	border: 1px solid;
 	width: 100%;
