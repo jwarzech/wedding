@@ -14,6 +14,6 @@ gem 'typus', :git => 'git://github.com/fesplugas/typus.git'
 gem 'authlogic'
 
 group :production do
-  #gem 'pg'
+  gem 'pg'
   gem 'thin'
 end
