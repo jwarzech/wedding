@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.5'
+gem 'rails', '3.0.8'
 gem 'sqlite3'
 gem 'rake', '0.8.7'
 
@@ -12,3 +12,8 @@ gem 'typus', :git => 'git://github.com/fesplugas/typus.git'
 
 # https://github.com/binarylogic/authlogic_example
 gem 'authlogic'
+
+group :production do
+  #gem 'pg'
+  gem 'thin'
+end

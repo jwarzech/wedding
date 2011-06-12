@@ -1,0 +1,100 @@
+[36m2011-06-07T15:49:04+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-07T15:49:05+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-07T16:25:59+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-07T16:26:00+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-07T16:26:08+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 10158 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-07T16:26:09+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-07T16:26:09+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-07T16:26:10+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-07T17:07:09+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-07T17:07:09+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-07T17:07:27+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 26861 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-07T17:07:29+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-07T17:07:29+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-07T17:07:30+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-07T17:19:28+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-07T17:19:28+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-07T17:19:42+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 5453 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-07T17:19:43+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-07T17:19:43+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-07T17:19:44+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-07T17:45:51+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-07T17:45:51+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-07T17:46:06+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 30577 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-07T17:46:09+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-07T17:46:09+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-07T17:46:10+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-07T18:16:12+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-07T18:16:12+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-07T18:18:12+00:00 heroku[web.1]:[0m State changed from starting to down
+[36m2011-06-07T18:19:23+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 10733 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-07T18:19:25+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-07T18:19:26+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-07T18:19:27+00:00 heroku[web.1]:[0m State changed from down to crashed
+[36m2011-06-07T18:19:27+00:00 heroku[web.1]:[0m State changed from crashed to down
+[36m2011-06-12T14:17:23+00:00 heroku[web.1]:[0m Unidling
+[36m2011-06-12T14:17:23+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-12T14:17:32+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 50529 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-12T14:17:33+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-12T14:17:33+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-12T14:17:34+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-12T14:17:34+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-12T14:17:34+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-12T14:17:40+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 59826 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-12T14:17:42+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-12T14:17:42+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-12T14:17:43+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[33m2011-06-12T14:17:43+00:00 heroku[router]:[0m Error H10 (App crashed) -> GET growing-snow-639.heroku.com/ dyno= queue= wait= service= bytes=
+[33m2011-06-12T14:17:43+00:00 heroku[router]:[0m Error H10 (App crashed) -> GET growing-snow-639.heroku.com/favicon.ico dyno=none queue=0 wait=0ms service=0ms bytes=0
+[36m2011-06-12T14:38:53+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-12T14:38:53+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-12T14:39:05+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 8571 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-12T14:39:07+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-12T14:39:07+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-12T14:39:08+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-12T14:50:00+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-12T14:50:00+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-12T14:50:13+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 35760 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-12T14:50:15+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-12T14:50:15+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-12T14:50:16+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-12T15:44:25+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-12T15:44:25+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-12T15:44:43+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 30679 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-12T15:44:45+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-12T15:44:45+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-12T15:44:46+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-12T16:38:02+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-12T16:38:02+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-12T16:38:15+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 30774 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-12T16:38:17+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-12T16:38:17+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-12T16:38:17+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-12T16:51:16+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-12T16:51:16+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-12T16:51:26+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 39329 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-12T16:51:27+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-12T16:51:27+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-12T16:51:28+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-12T17:44:37+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-12T17:44:37+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-12T17:45:15+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 17746 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-12T17:45:17+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-12T17:45:17+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-12T17:45:18+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-12T19:44:43+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-12T19:44:43+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-12T19:44:58+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 21099 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-12T19:45:00+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-12T19:45:00+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-12T19:45:01+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[36m2011-06-12T20:26:11+00:00 heroku[web.1]:[0m State changed from crashed to created
+[36m2011-06-12T20:26:11+00:00 heroku[web.1]:[0m State changed from created to starting
+[36m2011-06-12T20:26:17+00:00 heroku[web.1]:[0m Starting process with command: `thin -p 4930 -e production -R /home/heroku_rack/heroku.ru start`
+[36m2011-06-12T20:26:19+00:00 app[web.1]:[0m (erb):9: Invalid DATABASE_URL (RuntimeError)
+[36m2011-06-12T20:26:19+00:00 heroku[web.1]:[0m Process exited
+[36m2011-06-12T20:26:20+00:00 heroku[web.1]:[0m State changed from starting to crashed
+[33m2011-06-12T20:32:59+00:00 heroku[router]:[0m Error H10 (App crashed) -> GET growing-snow-639.heroku.com/ dyno=none queue=0 wait=0ms service=0ms bytes=0
+[33m2011-06-12T20:32:59+00:00 heroku[router]:[0m Error H10 (App crashed) -> GET growing-snow-639.heroku.com/favicon.ico dyno=none queue=0 wait=0ms service=0ms bytes=0
+[32m2011-06-12T13:33:00-07:00 heroku[nginx]:[0m GET / HTTP/1.1 | 68.43.250.7 | 794 | http | 503
+[32m2011-06-12T13:33:00-07:00 heroku[nginx]:[0m GET /favicon.ico HTTP/1.1 | 68.43.250.7 | 796 | http | 503
