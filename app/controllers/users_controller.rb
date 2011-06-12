@@ -1,8 +1,7 @@
 class UsersController < ApplicationController
   before_filter :require_no_user, :only => [:new, :create]
-  #before_filter :require_user, :only => [:new, :create, :show, :edit, :update]
-  
-=begin  
+  before_filter :require_user, :only => [:new, :create, :show, :edit, :update]
+   
   # GET /users
   # GET /users.xml
   def index
@@ -85,4 +84,3 @@ class UsersController < ApplicationController
     end
   end
 end
-=end
