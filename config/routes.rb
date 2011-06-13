@@ -3,4 +3,5 @@ Wedding::Application.routes.draw do
   resources :users, :subscribers
   resources :user_sessions #, :only => [:new, :create, :destroy]
   match 'login' => 'user_sessions#new'
+  match 'logout' => 'user_sessions#destroy'
 end

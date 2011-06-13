@@ -13,11 +13,8 @@
     <% end %>
 
     <div class="field">
-      <%= f.label :login %><br />
-      <%= f.text_field :login %>
-    </div>
-    <div class="field">
       <%= f.label :password %><br />
+      <%= f.hidden_field :login, :value => 'anonymous' %>
       <%= f.password_field :password %>
     </div>
     <div class="actions">
