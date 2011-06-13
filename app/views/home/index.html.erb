@@ -271,32 +271,66 @@
 	</div>
 	<!-- /end header -->
 	
+	<style>
+	  
+	  table#room_rates {
+	    border: 1px solid #333;
+	    text-align: center;
+	  }
+	  
+	  #room_rates th {
+	    background: #333;
+	    border: 1px solid #333;
+	    color: #909090;
+	    font-weight: normal;
+	  }
+	  
+	  #room_rates th#room_type {
+	    width: 250px;
+	  }
+	  
+	  #room_rates td {
+	    padding: 5px;
+	    color: #666;
+	    font-weight: lighter;
+	  }
+	  
+	  #room_rates td.room-view {
+      text-align: left;
+      font-size: 1.05em;
+      background: #909090;
+      color: #333;
+      font-weight: normal;
+    }
+
+	</style>
+	
 	<!-- body -->
 	<div class="wrap-section-body">
 		<div id="styles">
 		  <div class="column-640">
 				<h2>Rates</h2>
-			  <table>
+			  <table id="room_rates">
 			    <tr>
-			      <th>Room Type</th>
-			      <th class="cost-col">Per Person/Per Night (Feb 23-March 2, 2012)</th>
-			      <th class="cost-col">Per Person/Per Night (March 2-7, 2012)</th>
+			      <th id="room_type">Room Type</th>
+			      <th class="cost-col">(Feb 23-March 2, 2012)</th>
+			      <th class="cost-col">(March 2-7, 2012)</th>
 			    </tr>
-			    <tr class="odd">
-			      <td colspan="3">Junior Suite Partial Ocean View</td>
+			    <tr>
+			      <td colspan="3" class="room-view">Junior Suite Partial Ocean View</td>
 			    </tr>
-			    <tr class="odd">
-			      <td>Single (if 1 person in the room)</td>
+			    <tr>
+			      <td class="room-type">Single (if 1 person in the room)</td>
 			      <td>$331.67</td>
 			      <td>$384.09</td>
 			    </tr>
-			    <tr class="odd">
+			    <tr>
 			      <td>Double (if 2 person in the room)</td>
 			      <td>$248.33</td>
 			      <td>$302.02</td>
 			    </tr>
 			    <tr>
-			      <td colspan="3">Junior Suite Ocean View</td>
+			      <td colspan="3" class="room-view">Junior Suite Ocean View</td>
 			    </tr>
 			    <tr>
 			      <td>Single (if 1 person in the room)</td>
@@ -309,7 +343,7 @@
 			      <td>$332.39</td>
 			    </tr>
 			    <tr>
-			      <td colspan="3">Junior Suite View Swim Out</td>
+			      <td colspan="3" class="room-view">Junior Suite View Swim Out</td>
 			    </tr>
 			    <tr>
 			      <td>Single (if 1 person in the room)</td>
@@ -322,7 +356,7 @@
 			      <td>$347.98</td>
 			    </tr>
 			    <tr>
-			      <td colspan="3">Preferred Jr Suite Ocean View</td>
+			      <td colspan="3" class="room-view">Preferred Jr Suite Ocean View</td>
 			    </tr>
 			    <tr>
 			      <td>Single (if 1 person in the room)</td>
