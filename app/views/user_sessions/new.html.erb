@@ -1,5 +1,39 @@
-<h1>Login</h1>
+<style>
 
-<%= render 'form' %>
+  body {
+    background: #f6f6f6;
+  }
+  
+  img {
+    margin-top: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 250px;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  #login {
+    width: 640px;
+  }
+  
+</style>
 
-<%= link_to 'Back', user_sessions_path %>
+
+<div id="section_1">
+  <div class="wrap-section-body">
+		<div class="column-320"></div>
+		<div class="column-640">
+      <img src="images/login.jpg" />
+      <h2>Stefanie and Jordan are getting married</h2>
+      <%= render 'form' %>
+    </div>
+    <div class="clear"></div>
+	</div>
+</div>

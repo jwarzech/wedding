@@ -1,24 +1,20 @@
 <div id="login">
   <%= form_for(@user_session) do |f| %>
-    <% if @user_session.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@user_session.errors.count, "error") %> prohibited this user_session from being saved:</h2>
-
-        <ul>
-        <% @user_session.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-
+    <h5>Please enter the password found on your invitation:</h5>
     <div class="field">
-      <%= f.label :password %><br />
       <%= f.hidden_field :login, :value => 'anonymous' %>
-      <%= f.password_field :password %>
-    </div>
-    <div class="actions">
-      <%= f.submit %>
+      <%= f.password_field :password %> 
+      <br />
+      <%= link_to_function "Login", "$(this).up('form').submit()", :class => "button"  %>
+      <br />
+      <br />
+      <% if @user_session.errors.any? %>
+        <div id="error_explanation">
+          <% @user_session.errors.full_messages.each do |msg| %>
+            <i><%= msg %></i>
+          <% end %>
+        </div>
+      <% end %>
     </div>
   <% end %>
 </div>
