@@ -2,6 +2,8 @@ class UserSessionsController < ApplicationController
   before_filter :require_no_user, :only => [:new, :create]
   before_filter :require_user, :only => :destroy
   
+  caches_page :new
+  
   # GET /user_sessions/new
   # GET /user_sessions/new.xml
   def new
@@ -37,7 +39,7 @@ class UserSessionsController < ApplicationController
     @user_session.destroy
 
     respond_to do |format|
-      format.html { redirect_to(:users, :notice => 'Goodbye!') }
+      format.html { redirect_to(:login_path, :notice => 'Goodbye!') }
       format.xml  { head :ok }
     end
   end
