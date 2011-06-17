@@ -236,8 +236,8 @@
 		<div class="section-header">
 			<h1>Lodging</h1>
 			<ul class="section-nav">
-				<li><a class="up" href="#section_3"></a></li>
-				<li><a class="down" href="#section_5"></a></li>
+				<li><a class="up" href="#section_2"></a></li>
+				<li><a class="down" href="#section_4"></a></li>
 			</ul>
 		</div>
 	</div>
@@ -281,14 +281,18 @@
 	<div class="wrap-section-body">
 		<div id="styles">
 		  <div class="column-960">
-		    We invite you to stay at the Secrets Maroma Beach with us.  We have managed to get a really good rate.  If you'd like to stay at a different resort there are a lot to choose from real close.  
+		    <h1>Where should I stay?</h1>
+		    <p>We hope you decide to stay with us at the Secrets Maroma Beach resort and we have worked with a travel agent to get a really good group rate.  For those wishing to stay at a nearby resort we are working on compiling a list of alternative lodging locations.</p>
 		    
-		    We will be there from February 25 - March 4, 2012 
+		    <p>We highly suggest that you stay at least three nights but welcome you to stay as long as you want after the wedding (we will be there from February 23-March 2, 2012).</p>
+		    
+		    <p>We will posting additional details coming up so please sign up for our newsletter at the bottom of the site to get an update when we post it.</p>
 		  </div>
 		  
 		  <div class="clear"></div>
 		  
 		  <div class="column-640">
+		    
 			  <table id="room_rates">
 			    <tr>
 			      <th id="room_type">Room Type</th>
@@ -405,7 +409,8 @@
 	<div class="wrap-section-body">
 	  <div id="info">
 	    <div class="column-960">
-	      To get to the resort you will fly into the Cancun, Mexico airport and need to take a transfer (approx. 30 minutes) to Maroma Beach.
+	      <h1>How do I get there?</h1>
+	      <p>To get to the resort you will fly into the Cancun, Mexico airport and need to take a transfer (approx. 30 minutes) to Maroma Beach.</p>
 	    </div>
 	  
 	    <div class="clear"></div>
@@ -446,9 +451,9 @@
 	<!-- body -->
 	<div class="wrap-section-body">
 		<div id="contact">
-
 			<!-- column 1 -->
 			<div class="column-960">
+			  <h1>Sign up for our email list</h1>
 				<p>Please be sure to bookmark our webpage as we will be updating it as we have more details to share.</p>
 				<p>We would also like to ask for you to sign up below for our newsletter.  We will be sending out email updates as well.</p>
 			
@@ -469,6 +474,7 @@
 			    }
 			    
 			    th {
+			      text-align: left;
 			      padding-top: 5px;
 			      padding-bottom: 5px;
 			    }
@@ -511,7 +517,7 @@
 			      </tr>
 			      
 			      <tr>
-			        <td><%= select(f, :will_attend, Subscriber.will_attends.keys) %></td>
+			        <td><%= f.select(:will_attend_cd, Hash['Definitely' => 1,'Not Sure' => 2,'Unable To' => 3])%></td>
 			      </tr>
 			      
 			      <tr>
@@ -519,7 +525,7 @@
 			      </tr>
 			      
 			      <tr>
-			        <td><%= select(f, :staying_at_resort, Subscriber.staying_at_resorts.keys) %></td>
+			        <td><%= f.select(:staying_at_resort_cd, Hash['Yes' => 1,'Maybe' => 2,'No' => 3])%></td>
 			      </tr>
 			      
 			      <tr>
